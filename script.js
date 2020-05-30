@@ -1,4 +1,5 @@
 let input = document.getElementById ('inputTextHTML');
+
 input.addEventListener ('keydown', function (event) {
   if (event.keyCode == 13) {
     event.preventDefault ();
@@ -31,4 +32,11 @@ function myFunction () {
   emojiTestElement = document.getElementById (
     'emojis'
   ).innerHTML = joinedThings;
+}
+
+function copyToClipboard () {
+  let output = document.getElementById ('emojis');
+  output.select ();
+
+  document.execCommand ('Copy');
 }

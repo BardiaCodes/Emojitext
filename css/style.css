@@ -45,8 +45,13 @@
 	text-align: center;
 }
 
-.btn {
+#translate {
 	margin-top: 10px;
+}
+
+#copyToClipboard {
+	color: firebrick;
+	font-size: 10px;
 }
 
 .grey-area {
